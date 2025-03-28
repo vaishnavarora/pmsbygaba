@@ -1,51 +1,8 @@
 # test_final.py
 
 import customtkinter as ctk
-import csv
-from datetime import datetime, date
-import random
-import os
-import json
-from tkinter import messagebox, ttk, StringVar, END, PhotoImage 
-import tkinter as tk
-import re
-from reportlab.pdfgen import canvas
-from reportlab.lib.utils import ImageReader
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfbase import pdfmetrics
-from PyPDF2 import PdfReader, PdfWriter
-from PIL import Image, ImageTk
-import io
-import webbrowser
-from customtkinter import CTk, CTkFrame, CTkButton, CTkLabel, CTkImage, CTkCanvas, CTkComboBox, CTkEntry, CTkOptionMenu, CTkToplevel, IntVar, StringVar
-from dateutil.relativedelta import relativedelta
-from CTkListbox import *
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-from dotenv import load_dotenv, set_key, dotenv_values
-#imported opencv
-import pywhatkit as kit
-import pyautogui
-import time
-import turtle
-import cv2
-from pyzbar.pyzbar import decode
-import tempfile
-import requests
-from twilio.rest import Client
-############################
-import threading
-import tkinter as tk
-from tkinter import Toplevel, Label, messagebox
-from tkinter import filedialog
-import requests
-import os
-#########################
-
 
 output_filename = ""
-env_file = ".env"
 class EnvEditorApp(ctk.CTk):
     def __init__(self, env_file_path, master=None):
         super().__init__()
